@@ -1,4 +1,4 @@
-package com.notenoughmail.examplemod.core;
+package com.notenoughmail.examplemod.core.program;
 
 @FunctionalInterface
 public interface Operator {

@@ -1,4 +1,7 @@
-package com.notenoughmail.examplemod.core;
+package com.notenoughmail.examplemod.core.program;
+
+import com.notenoughmail.examplemod.core.program.Operation;
+import com.notenoughmail.examplemod.core.program.Program;
 
 public class Line {
 
@@ -35,18 +38,22 @@ public class Line {
 
     @Override
     public String toString() {
-        final StringBuilder builder = new StringBuilder();
-        appendString(builder);
+        final StringBuilder builder = new StringBuilder("Line[" + getLineNumber(lineNumber) + "]:");
+        for (Object arg : args) {
+            builder.append(" ");
+            builder.append(arg);
+        }
         return builder.toString();
     }
 
-    public void appendString(StringBuilder builder) {
+    public void appendToProgram(StringBuilder builder) {
         builder.append(getLineNumber(lineNumber));
         builder.append("|");
         for (Object arg : args) {
             builder.append(" ");
-            builder.append(arg.toString());
+            builder.append(arg);
         }
+        builder.append("\n");
     }
 
     public static String getLineNumber(int lineNumber) {

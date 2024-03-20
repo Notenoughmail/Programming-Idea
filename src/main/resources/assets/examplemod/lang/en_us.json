@@ -1,0 +1,9 @@
+{
+  "message.examplemod.requires_rdc": "Operation[%s] requires the first argument to be either a Register, DevicePort, or NetworkChannel, was a %s",
+  "message.examplemod.nil_called": "Operation[nil] should never be called!",
+  "message.examplemod.line_has_incorrect_number_of_args": "Line[%s] does not have a valid number of arguments for the given operation: %s. Expected: %d, given: %d",
+  "message.examplemod.could_not_parse_arg": "Could not process argument: %s into a value",
+  "message.examplemod.could_not_retrieve_value": "Could not get value from argument: %s",
+  "message.examplemod.con": "CONSOLE: %s",
+  "message.examplemod.error_on_line": "Error on line %s: %s"
+}

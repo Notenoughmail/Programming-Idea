@@ -1,4 +1,4 @@
-package com.notenoughmail.examplemod.core;
+package com.notenoughmail.examplemod.core.program;
 
 import java.util.HashMap;
 import java.util.Map;
